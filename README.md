@@ -15,5 +15,8 @@ https://data.world/awram/us-mass-shootings. We found this dataset relevant, sinc
 
 ### Proposed timeline : 
 (internal milestones)
+1. Supervised correlation : Check the correlation between quotes in our subest and occurences of mass shootings (milestone 2)
+2. Underlying predictors : Check for features of the shootings correlated to the importance of the media coverage
+3. Unsupervised corrleation : Check the words that are the moste correlated with the events of mass shootings
 
 #### Questions for TAs : 
