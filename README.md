@@ -23,7 +23,7 @@ https://data.world/awram/us-mass-shootings. Finding such a dataset was necessary
 
 - **Quantifying reaction**:<br> We believe this is one of the most - if not the most - delicate and challenging part of our study so far, since failing to properly generate this number will lead to an unreliable analysis. We will take into account several things: the number of quotes following the shooting in the next 10 days, the slope of the decrease in quotes in that period (high negative slope meaning that the media outrage quickly faded away), etc. We can then take a weighted sum of these parameters (standardized) and realisticly hope to get a meaningful score. Maybe we will learn a more accurate way of estimating such a number with Machine Learning in the next few weaks.
  
-### Proposed timeline : 
+### Proposed timeline: 
 
 1. **Mass shootings and quotes**:<br> Analyse the correlation between quotes in our subest and occurences of mass shootings<br>
 a. Words set defined a-priori (already done)<br>
@@ -33,4 +33,4 @@ b. Correlation-based word set selection, and analysis (goal: done by 19.11.2021)
 
 3. **Selecting relevant quotes**: use supervised learning (manually annotate a subset of the data) to predict the link of quotes with mass shootings (goal: done by 10.12.2021)
 
-4. **Preparing the report**: The goal is to use the last week (17.12.2021) to go through the code and add all the relevant explanitory texts and make it appealing to the reader. We believe this is a crucial part for a successfull project.
+4. **Preparing the report**: The goal is to use the last week (17.12.2021) to go through the code, add all the relevant explanitory texts and make it appealing to the reader. We believe this is a crucial part for a successfull project.
