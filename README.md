@@ -13,7 +13,11 @@ For the project, in addition to the Quotebank dataset, we will use the "Mother J
 https://data.world/awram/us-mass-shootings. Finding such a dataset was necessary for our project to be feasible. Indeed, it gives us basic information (e.g. date, number of fatalities) about each shooting that occured in the USA between 2015 and 2020, adding also some interesting features such as location, age and gender of the shooter, etc.
 
 ### Methods : 
-For our analysis, we first selected a subset of three words : "gun", "shooting", "firearm" (because those words are necessary for any talk about gun control/firearm violence). We then created a subset of the Quotebank dataset containing all the quotes where at leat one of these words occurs. This allowed us to plot the distribution of this selected subset over time. Subsequently, we peformed some descriptive analysis of the Mother Jones dataset. 
+- **Managing the size of the data**: The Quotebank dataset's size does not let us work with it as a whole in a reasonnable way. Using Google Colab, we were able to link the dataset to Google Drive storage. We ran a code that would select only the quotes related to firearms and shootings, and save the corresponding rows to a new file. This way, we would get rid of the unecessary rows containing quotes who had no direct link to our study. 
+
+- **Selecting the relevant quotes**: For this milestone, we selected these quotes using three keywords: "gun", "shooting", "firearm" (quotes needed to contain at least one of the three in order to be selected). Later into the project, we plan to replace this basic method by a supervized learning algorithm that selects quotes that are likely to be related to the theme of our project. We could for example use a deep neural network generated with the PyTorch library.
+
+- This allowed us to plot the distribution of this selected subset over time. Subsequently, we peformed some descriptive analysis of the Mother Jones dataset. 
 In order to link the two datasets and to show that our word subset is relevant, we performed a Pearson correlation test between the number of quotations in our subset at a given date and the number of days since the last shooting.
 The _seaborn_ and _matplotlib_ were used for data vizualisation, while the _stats_ and _statsmodels_ libraries were used for statistical inferences. 
 
