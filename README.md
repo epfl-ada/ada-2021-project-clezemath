@@ -21,19 +21,16 @@ https://data.world/awram/us-mass-shootings. Finding such a dataset was necessary
 
 - **Ranking features by influence on the media coverage**:<br> We plan on evaluating this by generating a "reaction score" for each shooting event. We can then perform linear regression with predictions X_i being the features of the shooting (number of fatalities, age of shooter, location, etc.), and the outcome y_i being the reaction score of event i. If we standardize the predictors using z-scores, we will then be able to compare the coefficients: the largest coefficients would correspond to the most influencial features. The tricky part that is left is to generate a "reaction score" that is accurate and truly representitive. 
 
-- **Quantifying reaction**:<br> We believe this is one of the most - if not the most - delicate and challenging part of our study so far, since failing to properly generate this number will lead to an unreliable analysis. We will take into account several things: the number of quotes following the shooting in the next 10 days, the slope of the decrease in quotes in that period (high negative slope meaning that the media outrage quickly faded away), etc. We can then take a weighted sum of these parameters and realisticly hope to get a meaningful score.
+- **Quantifying reaction**:<br> We believe this is one of the most - if not the most - delicate and challenging part of our study so far, since failing to properly generate this number will lead to an unreliable analysis. We will take into account several things: the number of quotes following the shooting in the next 10 days, the slope of the decrease in quotes in that period (high negative slope meaning that the media outrage quickly faded away), etc. We can then take a weighted sum of these parameters (standardized) and realisticly hope to get a meaningful score. Maybe we will learn a more accurate way of estimating such a number with Machine Learning in the next few weaks.
  
 ### Proposed timeline : 
 
-1. Mass shootings and quotes: Analyse the correlation between quotes in our subest and occurences of mass shootings
-a. Words set defined a-priori (done)
-b. Correlation-based word set selection, and analysis (19 Nov 2021)
+1. **Mass shootings and quotes**:<br> Analyse the correlation between quotes in our subest and occurences of mass shootings<br>
+a. Words set defined a-priori (already done)<br>
+b. Correlation-based word set selection, and analysis (goal: done by 19.11.2021)<br>
 
-2. Underlying predictors : Determine features of the shootings correlated to the importance of the media coverage (03 Dec 2021)
+2. **Underlying predictors**:<br> Generate reaction score and perform linear regression to rank predictors by influence, as described in the "Method" part above (goal: done by 03.12.2021)
 
-4. Additional : use Neural Networks (RNNs?) to predict the link of quotes with mass shootings (supervised learning on a manually annotated subset) (10 Dec 2021)
+3. **Selecting relevant quotes**: use supervised learning (manually annotate a subset of the data) to predict the link of quotes with mass shootings (goal: done by 10.12.2021)
 
-5. Report finalisation (last week --> 17 Dec 2021)
-
-#### Questions for TAs : 
-- None for the moment
+4. **Preparing the report**: The goal is to use the last week (17.12.2021) to go through the code and add all the relevant explanitory texts and make it appealing to the reader. We believe this is a crucial part for a successfull project.
