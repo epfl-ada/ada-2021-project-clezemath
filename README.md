@@ -1,7 +1,7 @@
 # Firearms Debate in the US and its Relation to Mass Shootings
 
 ### Abstract:
-Gun control is one of the most controversial political topics in the United States. America being one of the world’s most liberal countries in the world, freedom is central amongst its values. But some could say: “My freedom stops when that of others begins”. And indeed, the United States are torn apart by relatively frequent occurrences of mass shootings. The right to own a gun therefore clashes with a need of more regulation to prevent a downward spiral of violence. But precisely how is this political debate about firearms linked to the occurrences of mass shootings? This is what we intend to find out by analyzing quotes emanating from American newspapers provided by the Quotebank dataset. Using this dataset combined with another one containing information about the all the mass shootings in the US in our studied timeframe, we aim to study how these tragic events influence the media coverage – and therefore also the political debate – about firearms and gun control. This could help us understand the underlying mechanisms of this societal problem, and provide us with tools to help predict future controversy on the matter.
+Gun control is one of the most controversial political topics in the United States. America being one of the world’s most liberal countries in the world, freedom is central amongst its values. But some could say: “My freedom stops when that of others begins”. And indeed, the US are regularly torn apart by mass shootings. Gun ownership and the need for regulation can seem incompatible at times. But precisely how is this political debate linked to the occurrences of mass shootings? This is what we intend to find out. Analyzing quotes emanating from American newspapers in the Quotebank dataset combined with additional data will help us study how these tragic events influence the media coverage – and therefore also the political debate – about gun control. This could help us understand the underlying mechanisms of this societal problem, and provide us with tools to help predict future controversy on the matter.
 
 ### Research Questions: 
 - How do the occurences of mass shootings in the US influence the debate over firearms? 
@@ -23,7 +23,7 @@ https://data.world/awram/us-mass-shootings. Finding such a dataset was necessary
 
 - **Quantifying reaction**:<br> We believe this is one of the most - if not the most - delicate and challenging part of our study so far, since failing to properly generate this number will lead to an unreliable analysis. We will take into account several things: the number of quotes following the shooting in the next 10 days, the slope of the decrease in quotes in that period (high negative slope meaning that the media outrage quickly faded away), etc. We can then take a weighted sum of these parameters (standardized) and realisticly hope to get a meaningful score. Maybe we will learn a more accurate way of estimating such a number with Machine Learning in the next few weaks.
  
-### Proposed timeline: 
+### Proposed timeline and organization for the following weaks: 
 
 1. **Mass shootings and quotes**:<br> Analyse the correlation between quotes in our subest and occurences of mass shootings<br>
 a. Words set defined a-priori (already done)<br>
