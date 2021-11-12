@@ -9,7 +9,7 @@ Gun control is one of the most controversial political topics in the United Stat
 - What are the words that are most correlated to the occurences of mass shootings? This would give us insight on how people are talking on the topic (is it more about dwelling on the victims or questionning the right to own a gun?).
 
 ### Proposed additional dataset:
-For the project, in addition to the Quotebank dataset, we will use the "Mother Jone's" dataset on US Mass Shootings, that we got from 
+For the project, in addition to the Quotebank dataset, we will use the **"Mother Jone's" dataset** on US Mass Shootings, that we got from 
 https://data.world/awram/us-mass-shootings. Finding such a dataset was necessary for our project to be feasible. Indeed, it gives us basic information (e.g. date, number of fatalities) about each shooting that occured in the USA between 2015 and 2020, adding also some interesting features such as location, age and gender of the shooter, etc.
 
 ### Methods : 
@@ -17,7 +17,11 @@ https://data.world/awram/us-mass-shootings. Finding such a dataset was necessary
 
 - **Selecting the relevant quotes**: For this milestone, we selected these quotes using three keywords: "gun", "shooting", "firearm" (quotes needed to contain at least one of the three in order to be selected). Later into the project, we plan to replace this basic method by a supervized learning algorithm that selects quotes that are likely to be related to the theme of our project. We could for example use a deep neural network generated with the PyTorch library.
 
-- **Checking the relevance of the study:** Plotting the distribution of the selected subset of quotes over time, and adding the occurences of shootings (from the Mother Jone's dataset), it seemed likely that some correlation was going on, since we could see some peaks in quotes following the shootings. In order to check our intuition, we performed a Pearson correlation test between the number of quotes at a given date and the number of days since the last shooting.
+- **Checking the relevance of the study**: Plotting the distribution of the selected subset of quotes over time, and adding the occurences of shootings (from the Mother Jone's dataset), it seemed likely that there was some correlation, since we could see some peaks in quotes following the shootings. In order to check our intuition, we performed a Pearson correlation test between the number of quotes at a given date and the number of days since the last shooting.
+
+- **Ranking features by influence on the media coverage**: We plan to evaluate this by generating a "reaction score" for each shooting event. We can then perform linear regression with predictions being the features of the shooting (number of fatalities, age of shooter, location, etc.), and the outcome being the reaction score. We could then rank the coefficients size and we would get the ranking of the most influencial features. The tricky part will be to generate a "reaction score" that is accurate and truly representitive. 
+
+- **Quantifying reaction**:
  
 ### Proposed timeline : 
 
