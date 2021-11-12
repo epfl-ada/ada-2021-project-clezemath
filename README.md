@@ -17,10 +17,8 @@ https://data.world/awram/us-mass-shootings. Finding such a dataset was necessary
 
 - **Selecting the relevant quotes**: For this milestone, we selected these quotes using three keywords: "gun", "shooting", "firearm" (quotes needed to contain at least one of the three in order to be selected). Later into the project, we plan to replace this basic method by a supervized learning algorithm that selects quotes that are likely to be related to the theme of our project. We could for example use a deep neural network generated with the PyTorch library.
 
-- This allowed us to plot the distribution of this selected subset over time. Subsequently, we peformed some descriptive analysis of the Mother Jones dataset. 
-In order to link the two datasets and to show that our word subset is relevant, we performed a Pearson correlation test between the number of quotations in our subset at a given date and the number of days since the last shooting.
-The _seaborn_ and _matplotlib_ were used for data vizualisation, while the _stats_ and _statsmodels_ libraries were used for statistical inferences. 
-
+- **Checking the relevance of the study:** Plotting the distribution of the selected subset of quotes over time, and adding the occurences of shootings (from the Mother Jone's dataset), it seemed likely that some correlation was going on, since we could see some peaks in quotes following the shootings. In order to check our intuition, we performed a Pearson correlation test between the number of quotes at a given date and the number of days since the last shooting.
+ 
 ### Proposed timeline : 
 
 1. Mass shootings and quotes: Analyse the correlation between quotes in our subest and occurences of mass shootings
@@ -34,3 +32,4 @@ b. Correlation-based word set selection, and analysis (19 Nov 2021)
 5. Report finalisation (last week --> 17 Dec 2021)
 
 #### Questions for TAs : 
+- None for the moment
