@@ -14,7 +14,7 @@ https://data.world/awram/us-mass-shootings. We found this dataset relevant, sinc
 
 
 ### Methods : 
-For our analysis, we first selected a subset of three words : "gun", "shooting", "firearm", because those words a necessary for any talk about gun control/firearm violence. We then created a subset of the Quotebank dataset containing all the quotes where at leat one of these words occurs. This allowed us to plot the distribution of this selected subset over time. Subsequently, we peformed some descriptive analysis of the Mother Jones dataset. 
+For our analysis, we first selected a subset of three words : "gun", "shooting", "firearm" (because those words are necessary for any talk about gun control/firearm violence). We then created a subset of the Quotebank dataset containing all the quotes where at leat one of these words occurs. This allowed us to plot the distribution of this selected subset over time. Subsequently, we peformed some descriptive analysis of the Mother Jones dataset. 
 In order to link the two datasets and to show that our word subset is relevant, we performed a Pearson correlation test between the number of quotations in our subset at a given date and the number of days since the last shooting.
 The _seaborn_ and _matplotlib_ were used for data vizualisation, while the _stats_ and _statsmodels_ libraries were used for statistical inferences. 
 
