@@ -28,4 +28,7 @@ https://data.world/awram/us-mass-shootings. Finding such a dataset was necessary
 - **Machine learning approach for word selection**: <br> We tried a machine learning approach to identify words that are correlated with the occurences of mass shootings. For this matter, we performed random forests classification on quotes that were previously labelled 'after' (if they occured after a shooting) or 'baseline'. Then we used the feature_importance function in order the get the words that were the most pertinent for the classification. 
 
 
+ ## Data Story 
+ 
+ Link to our data story : https://margauxlep.github.io/project-clezemath/
  
