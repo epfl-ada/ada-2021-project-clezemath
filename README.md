@@ -1,5 +1,10 @@
 # Firearms Debate in the US and its Relation to Mass Shootings
 
+
+ ## Data Story 
+ 
+ Link to our data story : https://margauxlep.github.io/project-clezemath/
+
 ### Abstract:
 Gun control is one of the most controversial political topics in the United States. America being one of the world’s most liberal countries in the world, freedom is central amongst its values. But some could say: “My freedom stops when that of others begins”. And indeed, the US are regularly torn apart by mass shootings. Gun ownership and the need for regulation can seem incompatible at times. But precisely how is this political debate linked to the occurrences of mass shootings? This is what we intend to find out. Analyzing quotes emanating from American newspapers in the Quotebank dataset combined with additional data will help us study how these tragic events influence the media coverage – and therefore also the political debate – about gun control. This could help us understand the underlying mechanisms of this societal problem, and provide us with tools to help predict future controversy on the matter.
 
@@ -27,8 +32,10 @@ https://data.world/awram/us-mass-shootings. Finding such a dataset was necessary
 
 - **Machine learning approach for word selection**: <br> We tried a machine learning approach to identify words that are correlated with the occurences of mass shootings. For this matter, we performed random forests classification on quotes that were previously labelled 'after' (if they occured after a shooting) or 'baseline'. Then we used the feature_importance function in order the get the words that were the most pertinent for the classification. 
 
+## Team 
 
- ## Data Story 
- 
- Link to our data story : https://margauxlep.github.io/project-clezemath/
- 
+**CLE**ment Rio, 
+**ZE**wei Xu, 
+**MA**rgaux L'Eplattenier, 
+**TH**omas Defauw <br>
+a.k.a. **Clezemath**
