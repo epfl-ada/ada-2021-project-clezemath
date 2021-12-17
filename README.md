@@ -21,16 +21,11 @@ https://data.world/awram/us-mass-shootings. Finding such a dataset was necessary
 
 - **Ranking features by influence on the media coverage**:<br> We plan on evaluating this by generating a "reaction score" for each shooting event. We can then perform linear regression with predictions X_i being the features of the shooting (number of fatalities, age of shooter, location, etc.), and the outcome y_i being the reaction score of event i. If we standardize the predictors using z-scores, we will then be able to compare the coefficients: the largest coefficients would correspond to the most influencial features. The tricky part that is left is to generate a "reaction score" that is accurate and truly representitive. 
 
-- **Quantifying reaction**:<br> We believe this is one of the most - if not the most - delicate and challenging part of our study so far, since failing to properly generate this number will lead to an unreliable analysis. We will take into account several things: the number of quotes following the shooting in the next 10 days, the slope of the decrease in quotes in that period (high negative slope meaning that the media outrage quickly faded away), etc. We can then take a weighted sum of these parameters (standardized) and realisticly hope to get a meaningful score. Maybe we will learn a more accurate way of estimating such a number with Machine Learning in the next few weaks.
+- **Quantifying reaction**:<br> We believe this is one of the most - if not the most - delicate and challenging part of our study so far, since failing to properly generate this number will lead to an unreliable analysis. We will take into account several things: the number of quotes following the shooting in the next 10 days, the slope of the decrease in quotes in that period (high negative slope meaning that the media outrage quickly faded away), etc. We then take a weighted sum of these parameters (standardized) in order to get a meaningful score. 
+
+- **Reaction score and features analysis** : <br> We performed a regression analysis to try and predict the reaction score of a shooting based on the features of the shootings. Then, in order to get a sense of the correlations between the features we performed a principal component analysis (PCA).
+
+- **Machine learning approach for word selection**: <br> We tried a machine learning approach to identify words that are correlated with the occurences of mass shootings. For this matter, we performed random forests classification on quotes that were previously labelled 'after' (if they occured after a shooting) or 'baseline'. Then we used the feature_importance function in order the get the words that were the most pertinent for the classification. 
+
+
  
-### Proposed timeline and organization for the following weaks: 
-
-1. **Mass shootings and quotes**:<br> Analyse the correlation between quotes in our subest and occurences of mass shootings<br>
-a. Words set defined a-priori (already done)<br>
-b. Correlation-based word set selection, and analysis (goal: done by 19.11.2021)<br>
-
-2. **Underlying predictors**:<br> Generate reaction score and perform linear regression to rank predictors by influence, as described in the "Method" part above (goal: done by 03.12.2021)
-
-3. **Selecting relevant quotes**: use supervised learning (manually annotate a subset of the data) to predict the link of quotes with mass shootings (goal: done by 10.12.2021)
-
-4. **Preparing the report**: The goal is to use the last week (17.12.2021) to go through the code, add all the relevant explanitory texts and make it appealing to the reader. We believe this is a crucial part for a successfull project.
